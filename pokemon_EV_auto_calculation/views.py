@@ -2,5 +2,8 @@
 from django.http import HttpResponse
 
 
-def top(request):
-    return HttpResponse(b"Hello World")
+def input(request):
+    return HttpResponse("ポケモンの値を入力")
+
+def result(request):
+    return HttpResponse("計算結果を表示")

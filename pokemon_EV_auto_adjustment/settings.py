@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pokemon_EV_auto_calculation.apps.Pokemon_EV_auto_calculationConfig',
+    'pokemon_EV_auto_calculation.apps.PokemonEvAutoCalculationConfig',
 ]
 
 MIDDLEWARE = [
