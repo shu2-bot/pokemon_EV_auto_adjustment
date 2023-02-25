@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pokemon_EV_auto_calculation.apps.PokemonEvAutoCalculationConfig',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
