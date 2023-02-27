@@ -6,4 +6,4 @@ def input(request):
     return render(request, "input.html")
 
 def result(request):
-    return HttpResponse("計算結果を表示")
+    return render(request, "result.html")
