@@ -3,3 +3,4 @@ manage.py
 pokemon_EV_auto_adjustment/__pycache__/
 pokemon_EV_auto_calculation/__pycache__/
 pokemon_EV_auto_calculation/migrations/
+pokemon_EV_auto_calculation/pythonz3/__pycache__/
