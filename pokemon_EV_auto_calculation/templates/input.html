@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 
 {% block main %}
+
 <div class="welcome">
     <h1 class="title">ようこそ、ポケモン努力値調整ツールへ</h1>
 </div> 
+
+<form>
+    <label for="input1">自分のポケモンを入力する:</label>
+    <input type="text" id="input1" name="input1"><br>
+
+    <div class="input-EV">
+        <label for="input2">H:</label>
+        <input class="input-num" type="text" id="input2" name="input2"><br>
+    </div>
+    <div class="input-EV">
+        <label for="input2">A:</label>
+        <input class="input-num" type="text" id="input2" name="input2"><br>
+    </div>
+    <div class="input-EV">
+        <label for="input2">入力フォーム2:</label>
+        <input type="text" id="input2" name="input2"><br>
+    </div>
+    <div class="input-EV">
+        <label for="input2">入力フォーム2:</label>
+        <input type="text" id="input2" name="input2"><br>
+    </div>
+  </form>
 
 <a class="btn btn-primary" href="{% url 'result' %}">努力値を求める</a>
 {% endblock %}
