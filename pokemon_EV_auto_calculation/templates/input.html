@@ -9,6 +9,11 @@
 <form>
     <label for="input1">自分のポケモンを入力する:</label>
     <input type="text" id="input1" name="input1"><br>
+</form>
+
+<form>
+    <label for="input1">相手のポケモンを入力する:</label>
+    <input type="text" id="input1" name="input1"><br>
 
     <div class="input-EV">
         <label for="input2">H:</label>
@@ -34,7 +39,12 @@
         <label for="input2">S:</label>
         <input class="input-num" type="text" id="input2" name="input2"><br>
     </div>
-  </form>
+
+    <label for="input1">特性:</label>
+    <input type="text" id="input1" name="input1"><br>
+</form>
+
+<a class="btn btn-primary">ポケモンを追加する</a>
 
 <a class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
 
