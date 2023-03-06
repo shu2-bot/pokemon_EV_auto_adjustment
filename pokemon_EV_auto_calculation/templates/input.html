@@ -48,19 +48,18 @@
 </form>
 -->
 
-<form action ="" method="post">
-    {{forms}}
-    {% csrf_token %}
-    <a class="btn btn-primary" button_type="submit" href="{% url 'result' %}" content="hozon"></a>
-</form>
-
 <form method="post">
+    <label for="input1">自分のポケモン:</label>
+    {{my_pokemon_form}}
+    <br>
+    <label for="input1">相手のポケモン:</label>
+    <br>
     {% csrf_token %}
-    {{forms }}
-    {% bootstrap_button button_type="submit" content="保存"%}
+    {{opposite_pokemon_form}}
+    {% bootstrap_button button_type="submit" content="努力値を計算する"%}
 </form>
 
 <a class="btn btn-primary">ポケモンを追加する</a>
-<a type="submit" class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
+
 
 {% endblock %}

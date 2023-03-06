@@ -20,7 +20,12 @@ class Pokemon_status(models.Model):
     def __str__(self):
         return self.pokemon_name
 
-class Input_Form(forms.ModelForm):
+class My_Pokemon_Input_Form(forms.ModelForm):
+    class Meta:
+        model = Pokemon_status
+        fields = ("pokemon_name", "ev_h")
+
+class Opposite_Pokemon_Input_Form(forms.ModelForm):
     class Meta:
         model = Pokemon_status
         fields = ("pokemon_name", "ev_h", "ev_a", "ev_b", "ev_c", "ev_d", "ev_s")
