@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load django_bootstrap5 %}
 
 {% block main %}
 
@@ -7,7 +8,7 @@
 </div> 
 
 <!--
-<form>
+<form method="post">
     <label for="input1">自分のポケモンを入力する:</label>
     <input type="text" id="input1" name="input1"><br>
 </form>
@@ -43,15 +44,23 @@
 
     <label for="input1">特性:</label>
     <input type="text" id="input1" name="input1"><br>
+    <a class="btn btn-primary" type="submit" href="{% url 'result' %}">努力値を計算する</a>
 </form>
 -->
 
-<form method="post">
+<form action ="" method="post">
     {{forms}}
     {% csrf_token %}
+    <a class="btn btn-primary" button_type="submit" href="{% url 'result' %}" content="hozon"></a>
+</form>
+
+<form method="post">
+    {% csrf_token %}
+    {{forms }}
+    {% bootstrap_button button_type="submit" content="保存"%}
 </form>
 
 <a class="btn btn-primary">ポケモンを追加する</a>
-<a class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
+<a type="submit" class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
 
 {% endblock %}

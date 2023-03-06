@@ -8,7 +8,30 @@ def input(request):
     params = {
         "forms": Input_Form(),
     }
+    if request.method == "POST":
+        pokemon_name = Input_Form(request.POST.get("pokemon_name"))
+    
+        params = {
+            "test_forms": request.POST.get("pokemon_name")
+        }
+
+        return render(request, "result.html", params)
     return render(request, "input.html", params)
+    # ここでpostメソッドを定義して李サルトに返す？
+    
 
 def result(request):
-    return render(request, "result.html")
+    # ここにPOSTメソッドが来た時に、計算して返却する？
+    
+    if request.method == "POST":
+        pokemon_name = Input_Form(request.POST.get("pokemon_name"))
+    
+    params = {
+        "test_forms": pokemon_name
+    }
+
+    return render(request, "result.html", params)
+    """
+    if request.method == "POST":
+        return render(request, "result.html")
+        """
