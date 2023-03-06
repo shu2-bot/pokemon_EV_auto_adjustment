@@ -48,4 +48,10 @@
 
 <a class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
 
+
+<form method="post">
+    {{forms}}
+    {% csrf_token %}
+</form>
+
 {% endblock %}
