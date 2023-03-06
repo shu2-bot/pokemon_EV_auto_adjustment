@@ -6,6 +6,7 @@
     <h1 class="title">ようこそ、ポケモン努力値調整ツールへ</h1>
 </div> 
 
+<!--
 <form>
     <label for="input1">自分のポケモンを入力する:</label>
     <input type="text" id="input1" name="input1"><br>
@@ -43,15 +44,14 @@
     <label for="input1">特性:</label>
     <input type="text" id="input1" name="input1"><br>
 </form>
-
-<a class="btn btn-primary">ポケモンを追加する</a>
-
-<a class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
-
+-->
 
 <form method="post">
     {{forms}}
     {% csrf_token %}
 </form>
+
+<a class="btn btn-primary">ポケモンを追加する</a>
+<a class="btn btn-primary" href="{% url 'result' %}">努力値を計算する</a>
 
 {% endblock %}
