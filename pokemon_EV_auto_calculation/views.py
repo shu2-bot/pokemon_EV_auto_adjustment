@@ -15,6 +15,13 @@ def input(request):
     
     if request.method == "POST":
         pokemon_name_list = request.POST.getlist("pokemon_name")
+        ev_h_list = request.POST.getlist("ev_h")
+        ev_a_list = request.POST.getlist("ev_a")
+        ev_b_list = request.POST.getlist("ev_b")
+        ev_c_list = request.POST.getlist("ev_c")
+        ev_d_list = request.POST.getlist("ev_d")
+        ev_s_list = request.POST.getlist("ev_s")
+
         # ここでZ3で検証
         my_pokemon_ev_h = 0
         my_pokemon_ev_a = 0
