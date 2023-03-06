@@ -14,10 +14,23 @@ def input(request):
         return render(request, "input.html", params)
     
     if request.method == "POST":
-        pokemon_name = request.POST.get("pokemon_name")
-    
+        pokemon_name_list = request.POST.getlist("pokemon_name")
+        # ここでZ3で検証
+        my_pokemon_ev_h = 0
+        my_pokemon_ev_a = 0
+        my_pokemon_ev_b = 0
+        my_pokemon_ev_c = 0
+        my_pokemon_ev_d = 0
+        my_pokemon_ev_s = 0
+
         params = {
-            "pokemon_name": pokemon_name
+            "my_pokemon_name": pokemon_name_list[0],
+            "my_pokemon_ev_h": my_pokemon_ev_h,
+            "my_pokemon_ev_a": my_pokemon_ev_a,
+            "my_pokemon_ev_b": my_pokemon_ev_b,
+            "my_pokemon_ev_c": my_pokemon_ev_c,
+            "my_pokemon_ev_d": my_pokemon_ev_d,
+            "my_pokemon_ev_s": my_pokemon_ev_s
         }
         return render(request, "result.html", params)
     
