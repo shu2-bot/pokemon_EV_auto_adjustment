@@ -1,3 +1,4 @@
+# Not used
 from django import forms
 
 class Calculation_input_form(forms.Form):
