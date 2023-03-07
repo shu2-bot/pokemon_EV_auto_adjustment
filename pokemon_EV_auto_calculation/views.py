@@ -3,6 +3,7 @@ from django.shortcuts import render
 # from .forms import Calculation_input_form
 from .models import My_Pokemon_Input_Form
 from .models import Opposite_Pokemon_Input_Form
+from .models import Pokemon_status
 
 
 def input(request):
@@ -58,6 +59,8 @@ def result(request):
         ev_d_list = request.POST.getlist("ev_d")
         ev_s_list = request.POST.getlist("ev_s")
 
+        my_pokemon_bs = Pokemon_status.objects.get(pokemon_name = pokemon_name_list[0])
+
         # ここでZ3で検証
         my_pokemon_ev_h = 0
         my_pokemon_ev_a = 0
@@ -67,7 +70,8 @@ def result(request):
         my_pokemon_ev_s = 0
 
         params = {
-            "my_pokemon_name": pokemon_name_list[0],
+            #"my_pokemon_name": pokemon_name_list[0],
+            "my_pokemon_name": my_pokemon_bs,
             "my_pokemon_ev_h": my_pokemon_ev_h,
             "my_pokemon_ev_a": my_pokemon_ev_a,
             "my_pokemon_ev_b": my_pokemon_ev_b,
