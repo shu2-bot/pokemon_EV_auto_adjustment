@@ -1,4 +1,5 @@
-import type_table
+from . import type_table
+from z3 import *
 from fractions import Fraction
 
 # レベル50統一、ダメージ計算

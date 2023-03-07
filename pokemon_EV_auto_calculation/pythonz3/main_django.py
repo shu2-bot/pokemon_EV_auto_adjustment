@@ -1,7 +1,7 @@
 from z3 import *
-import calculate
+from . import calculate
 
-def main():
+def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, attack_list, defense_list):
     # 自分のポケモンの努力値
     ev_h = Int("ev_h")
     ev_a = Int("ev_a")
@@ -14,6 +14,7 @@ def main():
     s = Solver()
 
     # 努力値の条件
+    set_option(precision = 10)
     s.add(0 <= ev_h, ev_h <= 252, ev_h % 4 == 0)
     s.add(0 <= ev_a, ev_a <= 252, ev_a % 4 == 0)
     s.add(0 <= ev_b, ev_b <= 252, ev_b % 4 == 0)
@@ -24,16 +25,29 @@ def main():
 
     attack_move_sample = 100
 
+    if speed_list[0] == "on":
+        compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs[0]["bs_s"], opposite_pokemon_ev["ev_s"])
+
+    # 計算
+    if s.check() == sat:
+        # 解の表示
+        m = s.model()
+        ans_list = [m[ev_h], m[ev_a], m[ev_b], m[ev_c], m[ev_d], m[ev_s]]
+
     # 計算後の努力値を返す
-    return 0
+    return ans_list
 
 
 # 関数に直してく
-# 自ポケモンの素早さを計算
-pokemon_me_stats_s = calculate.calculate_hpother(s_ev, pokemon_me_bs["s_bs"])
+# 素早さの比較
+def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_pokemon_ev_s):
+    # 自ポケモンの素早さを計算
+    pokemon_me_stats_s = calculate.calculate_hpother(ev_s, my_pokemon_bs_s)
 
-# 敵ポケモンの素早さを計算
-pokemon_opposite1_stats_s = calculate.calculate_hpother(pokemon_opposite1_ev["s_ev"], pokemon_opposite1_bs["s_bs"])
+    # 敵ポケモンの素早さを計算
+    pokemon_opposite1_stats_s = calculate.calculate_hpother(int(opposite_pokemon_ev_s), (opposite_pokemon_bs_s))
 
-# 条件を追加
-s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
+    # 条件を追加
+    print(s)
+    s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
+    print(s)

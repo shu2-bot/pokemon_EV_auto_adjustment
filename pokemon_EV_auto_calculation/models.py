@@ -21,9 +21,13 @@ class Status_Ev(models.Model):
     ev_c = models.BigIntegerField("EffortValue-SpecialAttack", default=0)
     ev_d = models.BigIntegerField("EffortValue-SpecialDefense", default=0)
     ev_s = models.BigIntegerField("EffortValue-Speed", default=0)
+    speed = models.BooleanField("Compare-Speed", default=False)
+    attack = models.BooleanField("Compare-Attack", default=False)
+    defense = models.BooleanField("Compare-Defense", default=False)
 
     def __str__(self):
         return self.pokemon_name
+
 
 class My_Pokemon_Input_Form(forms.ModelForm):
     class Meta:
@@ -33,4 +37,5 @@ class My_Pokemon_Input_Form(forms.ModelForm):
 class Opposite_Pokemon_Input_Form(forms.ModelForm):
     class Meta:
         model = Status_Ev
-        fields = ("pokemon_name", "ev_h", "ev_a", "ev_b", "ev_c", "ev_d", "ev_s")
+        fields = ("pokemon_name", "ev_h", "ev_a", "ev_b", "ev_c", "ev_d", "ev_s", "speed", "attack", "defense")
+    
