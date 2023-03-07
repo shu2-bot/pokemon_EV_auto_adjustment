@@ -48,18 +48,21 @@
 </form>
 -->
 
-<form method="post">
+
+<br>
+
+<form method="post" name="input" target="_blank" action="{% url 'result' %}">
     <label for="input1">自分のポケモン:</label>
     {{my_pokemon_form}}
+    {% csrf_token %}
     <br>
     <label for="input1">相手のポケモン:</label>
     <br>
     {% csrf_token %}
     {{opposite_pokemon_form}}
-    {% bootstrap_button button_type="submit" content="努力値を計算する"%}
+    <br>
 </form>
+<a class="btn btn-primary" href="javascript:input.submit();" rel="noopener noreferrer">努力値を計算する</a>
 
 <a class="btn btn-primary">ポケモンを追加する</a>
-
-
 {% endblock %}
