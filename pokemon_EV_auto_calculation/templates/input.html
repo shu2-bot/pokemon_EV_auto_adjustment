@@ -56,11 +56,14 @@
     {{my_pokemon_form}}
     {% csrf_token %}
     <br>
+    <br>
     <label for="input1">相手のポケモン:</label>
     <br>
     {% csrf_token %}
     {{opposite_pokemon_form}}
     <br>
+    に対して，
+    素早くしたい
 </form>
 <a class="btn btn-primary" href="javascript:input.submit();" rel="noopener noreferrer">努力値を計算する</a>
 

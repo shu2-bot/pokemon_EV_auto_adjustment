@@ -59,7 +59,11 @@ def result(request):
         ev_d_list = request.POST.getlist("ev_d")
         ev_s_list = request.POST.getlist("ev_s")
 
-        my_pokemon_bs = Pokemon_status.objects.get(pokemon_name = pokemon_name_list[0])
+        # DBから種族値を取得 forでリストの長さ分だけ回す？
+        my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+        opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+
+        print(my_pokemon_bs[0]["bs_h"])
 
         # ここでZ3で検証
         my_pokemon_ev_h = 0
