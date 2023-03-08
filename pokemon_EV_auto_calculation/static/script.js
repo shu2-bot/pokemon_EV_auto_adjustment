@@ -27,3 +27,8 @@ function addForm() {
         i++;
     }
 }
+
+function tab_close() {
+    //できないみたい
+    window.close();
+}
