@@ -33,9 +33,11 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
         # 解の表示
         m = s.model()
         ans_list = [m[ev_h], m[ev_a], m[ev_b], m[ev_c], m[ev_d], m[ev_s]]
-
-    # 計算後の努力値を返す
-    return ans_list
+        # 計算後の努力値を返す
+        return ans_list
+    else:
+        ans_list = ["failed to solve"]
+        return ans_list
 
 
 # 関数に直してく
@@ -48,6 +50,4 @@ def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_poke
     pokemon_opposite1_stats_s = calculate.calculate_hpother(int(opposite_pokemon_ev_s), (opposite_pokemon_bs_s))
 
     # 条件を追加
-    print(s)
     s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
-    print(s)
