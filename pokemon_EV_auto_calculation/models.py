@@ -15,12 +15,12 @@ class Pokemon_status(models.Model):
     
 class Status_Ev(models.Model):
     pokemon_name = models.CharField("Name", max_length=12)
-    ev_h = models.BigIntegerField("EffortValue-HP", default=0)
-    ev_a = models.BigIntegerField("EffortValue-Attack", default=0)
-    ev_b = models.BigIntegerField("EffortValue-Defense", default=0)
-    ev_c = models.BigIntegerField("EffortValue-SpecialAttack", default=0)
-    ev_d = models.BigIntegerField("EffortValue-SpecialDefense", default=0)
-    ev_s = models.BigIntegerField("EffortValue-Speed", default=0)
+    ev_h = models.IntegerField("EffortValue-HP", default=0)
+    ev_a = models.IntegerField("EffortValue-Attack", default=0)
+    ev_b = models.IntegerField("EffortValue-Defense", default=0)
+    ev_c = models.IntegerField("EffortValue-SpecialAttack", default=0)
+    ev_d = models.IntegerField("EffortValue-SpecialDefense", default=0)
+    ev_s = models.IntegerField("EffortValue-Speed", default=0)
     speed = models.BooleanField("Compare-Speed", default=False)
     attack = models.BooleanField("Compare-Attack", default=False)
     defense = models.BooleanField("Compare-Defense", default=False)

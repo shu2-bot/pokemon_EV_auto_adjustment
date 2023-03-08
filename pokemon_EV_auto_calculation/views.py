@@ -72,27 +72,18 @@ def result(request):
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
         opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
 
-        print(my_pokemon_bs[0]["bs_h"])
-        print(opposite_pokemon_ev)
+        # print(my_pokemon_bs[0]["bs_h"])
+        # print(opposite_pokemon_ev)
 
+        # 敵ポケモンのリストを渡すようにする
+        # 検証結果はans_listに格納
         ans_list = main_django.main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, attack_list, defense_list)
-
-        # ここでZ3で検証
-        print("検証結果")
-        my_pokemon_ev_h = ans_list[0]
-        my_pokemon_ev_a = ans_list[1]
-        my_pokemon_ev_b = ans_list[2]
-        my_pokemon_ev_c = ans_list[3]
-        my_pokemon_ev_d = ans_list[4]
-        my_pokemon_ev_s = ans_list[5]
+        
+        print(ans_list)
 
         params = {
             "my_pokemon_name": pokemon_name_list[0],
-            "my_pokemon_ev_h": my_pokemon_ev_h,
-            "my_pokemon_ev_a": my_pokemon_ev_a,
-            "my_pokemon_ev_b": my_pokemon_ev_b,
-            "my_pokemon_ev_c": my_pokemon_ev_c,
-            "my_pokemon_ev_d": my_pokemon_ev_d,
-            "my_pokemon_ev_s": my_pokemon_ev_s,
+            "my_pokemon_ev_list": ans_list,
         }
         return render(request, "result.html", params)
+    

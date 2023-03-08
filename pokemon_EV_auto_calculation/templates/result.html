@@ -3,12 +3,21 @@
 <h1 class="title">計算結果を表示</h1>
 
 {{my_pokemon_name}}
+<!--
 {{my_pokemon_ev_h}}
 {{my_pokemon_ev_a}}
 {{my_pokemon_ev_b}}
 {{my_pokemon_ev_c}}
 {{my_pokemon_ev_d}}
 {{my_pokemon_ev_s}}
+-->
+{% if my_pokemon_ev_list %}
+    {% for i in my_pokemon_ev_list %}
+        <p>{{ i }}</p>
+    {% endfor %}
+{% else %}
+    なし
+{% endif %}
 
 <a class="">この出力結果を保存する</a>
 <a class="btn btn-primary" href="{% url 'input' %}">タブを閉じる</a>
