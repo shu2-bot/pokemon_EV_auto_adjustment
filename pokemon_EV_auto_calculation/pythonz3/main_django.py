@@ -25,7 +25,7 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
 
     attack_move_sample = 100
 
-    if speed_list[0] == "on":
+    if speed_list[0] == "y":
         compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs[0]["bs_s"], opposite_pokemon_ev["ev_s"])
 
     # 計算

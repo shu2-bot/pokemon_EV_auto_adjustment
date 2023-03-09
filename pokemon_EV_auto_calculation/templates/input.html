@@ -21,6 +21,7 @@
         <h3>------------相手のポケモン------------</h3>
         {% csrf_token %}
         {{opposite_pokemon_form.as_p}}
+        {{calculation_select_form.as_p}}
     </div>
     <br>
 </form>
@@ -29,44 +30,3 @@
 <a class="btn btn-primary" onclick="addForm()">ポケモンを追加する</a>
 
 {% endblock %}
-
-<!--
-<form method="post">
-    <label for="input1">自分のポケモンを入力する:</label>
-    <input type="text" id="input1" name="input1"><br>
-</form>
-
-<form>
-    <label for="input1">相手のポケモンを入力する:</label>
-    <input type="text" id="input1" name="input1"><br>
-
-    <div class="input-EV">
-        <label for="input2">H:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-    <div class="input-EV">
-        <label for="input2">A:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-    <div class="input-EV">
-        <label for="input2">B:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-    <div class="input-EV">
-        <label for="input2">C:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-    <div class="input-EV">
-        <label for="input2">D:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-    <div class="input-EV">
-        <label for="input2">S:</label>
-        <input class="input-num" type="text" id="input2" name="input2"><br>
-    </div>
-
-    <label for="input1">特性:</label>
-    <input type="text" id="input1" name="input1"><br>
-    <a class="btn btn-primary" type="submit" href="{% url 'result' %}">努力値を計算する</a>
-</form>
--->

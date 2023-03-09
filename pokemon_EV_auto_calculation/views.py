@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseNotAllowed
-# from .forms import Calculation_input_form
+from .forms import Calculation_input_form
+from .forms import Calculation_Select_Form 
 from .models import My_Pokemon_Input_Form
 from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
@@ -12,7 +13,9 @@ def input(request):
     if request.method == "GET":
         params = {
             "my_pokemon_form": My_Pokemon_Input_Form(),
-            "opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
+            #"opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
+            "opposite_pokemon_form": Calculation_input_form(),
+            "calculation_select_form": Calculation_Select_Form(),
         }
         return render(request, "input.html", params)
     
@@ -39,6 +42,8 @@ def result(request):
         speed_list = request.POST.getlist("speed")
         attack_list = request.POST.getlist("attack")
         defense_list = request.POST.getlist("defense")
+        print(speed_list, attack_list, defense_list)
+        
 
         # DBから種族値を取得 forでリストの長さ分だけ回す？
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
