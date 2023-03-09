@@ -21,6 +21,7 @@
         <h3>------------相手のポケモン------------</h3>
         {% csrf_token %}
         {{opposite_pokemon_form.as_p}}
+        {{calculation_select_form.as_p}}
     </div>
     <br>
 </form>

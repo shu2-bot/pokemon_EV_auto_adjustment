@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseNotAllowed
-# from .forms import Calculation_input_form
+from .forms import Calculation_input_form
+from .forms import Calculation_Select_Form 
 from .models import My_Pokemon_Input_Form
 from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
@@ -12,7 +13,9 @@ def input(request):
     if request.method == "GET":
         params = {
             "my_pokemon_form": My_Pokemon_Input_Form(),
-            "opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
+            #"opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
+            "opposite_pokemon_form": Calculation_input_form(),
+            "calculation_select_form": Calculation_Select_Form(),
         }
         return render(request, "input.html", params)
     
@@ -36,9 +39,23 @@ def result(request):
         opposite_pokemon_ev = {"ev_h": ev_h_list[0], "ev_a": ev_a_list[0], "ev_b": ev_b_list[0], "ev_c": ev_c_list[0], "ev_d": ev_d_list[0], "ev_s": ev_s_list[0]}
 
         # 比較項目
+        """
         speed_list = request.POST.getlist("speed")
         attack_list = request.POST.getlist("attack")
         defense_list = request.POST.getlist("defense")
+        print(speed_list, attack_list, defense_list)
+        """
+
+        #form = Calculation_Select_Form(request.POST.get("selected"))
+        speed_list = request.POST.getlist("speed")
+        attack_list = request.POST.getlist("attack")
+        defense_list = request.POST.getlist("defense")
+        print(speed_list, attack_list, defense_list)
+        #print(form.get_speed_display())
+        #form.cleaned_data['y']
+        #if form.is_valid():
+            #print(form.cleaned_data['select'])
+        
 
         # DBから種族値を取得 forでリストの長さ分だけ回す？
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
