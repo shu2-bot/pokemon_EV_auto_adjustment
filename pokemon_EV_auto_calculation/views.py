@@ -39,22 +39,10 @@ def result(request):
         opposite_pokemon_ev = {"ev_h": ev_h_list[0], "ev_a": ev_a_list[0], "ev_b": ev_b_list[0], "ev_c": ev_c_list[0], "ev_d": ev_d_list[0], "ev_s": ev_s_list[0]}
 
         # 比較項目
-        """
         speed_list = request.POST.getlist("speed")
         attack_list = request.POST.getlist("attack")
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
-        """
-
-        #form = Calculation_Select_Form(request.POST.get("selected"))
-        speed_list = request.POST.getlist("speed")
-        attack_list = request.POST.getlist("attack")
-        defense_list = request.POST.getlist("defense")
-        print(speed_list, attack_list, defense_list)
-        #print(form.get_speed_display())
-        #form.cleaned_data['y']
-        #if form.is_valid():
-            #print(form.cleaned_data['select'])
         
 
         # DBから種族値を取得 forでリストの長さ分だけ回す？
