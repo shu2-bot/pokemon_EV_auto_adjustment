@@ -36,7 +36,7 @@ def result(request):
         ev_c_list = request.POST.getlist("ev_c")
         ev_d_list = request.POST.getlist("ev_d")
         ev_s_list = request.POST.getlist("ev_s")
-        opposite_pokemon_ev = {"ev_h": ev_h_list[0], "ev_a": ev_a_list[0], "ev_b": ev_b_list[0], "ev_c": ev_c_list[0], "ev_d": ev_d_list[0], "ev_s": ev_s_list[0]}
+        opposite_pokemon_ev_list = {"ev_h": ev_h_list, "ev_a": ev_a_list, "ev_b": ev_b_list, "ev_c": ev_c_list, "ev_d": ev_d_list, "ev_s": ev_s_list}
 
         # 比較項目
         speed_list = request.POST.getlist("speed")
@@ -44,14 +44,18 @@ def result(request):
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
         
-
-        # DBから種族値を取得 forでリストの長さ分だけ回す？
+        # 自分のポケモンの種族値を取得
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
-        opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+        
+        # 相手のポケモンの種族値をリストに追加
+        opposite_pokemon_bs_list = []
+        for i in range(len(pokemon_name_list) - 1):
+            opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[i + 1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+            opposite_pokemon_bs_list.append(opposite_pokemon_bs)
 
-        # 敵ポケモンのリストを渡すようにする
+        # 自分のポケモンの努力値を導くため, それ以外の要素を入力
         # 検証結果はans_listに格納
-        ans_list = main_django.main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, attack_list, defense_list)
+        ans_list = main_django.main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list)
         
         # htmlに表示する時、リストの値をpopして取得するため逆向きにしている
         status_name_list = ["すばやさ", "とくぼう", "とくこう", "ぼうぎょ", "こうげき", "HP"]

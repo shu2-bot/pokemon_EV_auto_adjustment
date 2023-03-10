@@ -1,6 +1,6 @@
 # pokemon_EV_auto_adjustment
 
-## メモ
+## 勉強したこと
 ### Django
 - main.pyがインポートできなかった
   - pathを追加することで解決

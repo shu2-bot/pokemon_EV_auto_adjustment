@@ -1,7 +1,7 @@
 from z3 import *
 from . import calculate
 
-def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, attack_list, defense_list):
+def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list):
     # 自分のポケモンの努力値
     ev_h = Int("ev_h")
     ev_a = Int("ev_a")
@@ -24,9 +24,15 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
     s.add((ev_h + ev_a + ev_b + ev_c + ev_d + ev_s) <= 508)
 
     attack_move_sample = 100
+    
+    # speedの条件を追加
+    for i in range(len(speed_list)):
+        if speed_list[i] == 'y':
+            # opposite_pokemon_bs_listの中身が特殊なため, [i][0]["bs_s"]に[0]となっている
+            compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs_list[i][0]["bs_s"], opposite_pokemon_ev_list["ev_s"][i])
 
-    if speed_list[0] == "y":
-        compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs[0]["bs_s"], opposite_pokemon_ev["ev_s"])
+    # attackの条件を追加
+    # defenseの条件を追加
 
     # 計算
     if s.check() == sat:
@@ -40,7 +46,6 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
         return ans_list
 
 
-# 関数に直してく
 # 素早さの比較
 def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_pokemon_ev_s):
     # 自ポケモンの素早さを計算
@@ -51,3 +56,9 @@ def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_poke
 
     # 条件を追加
     s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
+
+# 攻撃するとき
+"""
+技のDBを作成
+名前　威力　タイプ　物理か特殊化
+"""
