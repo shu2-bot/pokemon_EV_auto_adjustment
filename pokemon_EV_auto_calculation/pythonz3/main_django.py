@@ -31,7 +31,8 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
             # opposite_pokemon_bs_listの中身が特殊なため, [i][0]["bs_s"]に[0]となっている
             compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs_list[i][0]["bs_s"], opposite_pokemon_ev_list["ev_s"][i])
 
-
+    # attackの条件を追加
+    # defenseの条件を追加
 
     # 計算
     if s.check() == sat:
@@ -45,7 +46,6 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
         return ans_list
 
 
-# 関数に直してく
 # 素早さの比較
 def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_pokemon_ev_s):
     # 自ポケモンの素早さを計算
@@ -56,3 +56,9 @@ def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_poke
 
     # 条件を追加
     s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
+
+# 攻撃するとき
+"""
+技のDBを作成
+名前　威力　タイプ　物理か特殊化
+"""
