@@ -1,7 +1,7 @@
 from django import forms
 
 class Calculation_input_form(forms.Form):
-    pokemon_name = forms.CharField(label="Name", max_length=12)
+    pokemon_name = forms.CharField(label="Name", max_length=12, required=True)
     ev_h = forms.IntegerField(label="EffortValue-HP", initial=0)
     ev_a = forms.IntegerField(label="EffortValue-Attack", initial=0)
     ev_b = forms.IntegerField(label="EffortValue-Defense", initial=0)
