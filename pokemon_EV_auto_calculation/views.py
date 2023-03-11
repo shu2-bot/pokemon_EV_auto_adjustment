@@ -6,6 +6,7 @@ from .models import My_Pokemon_Input_Form
 from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
 from .pythonz3 import main_django
+from urllib.parse import quote
 
 
 
@@ -70,4 +71,9 @@ def result(request):
     if request.method != "POST":
         response = HttpResponseNotAllowed(["POST"])
         return response
-    
+
+def handler404(request, exception):
+    context = {
+        "request_path": quote(request.path)
+    }
+    return render(request, "errors/404.html", context, status=404)
