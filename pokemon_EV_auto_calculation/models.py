@@ -9,6 +9,8 @@ class Pokemon_status(models.Model):
     bs_c = models.IntegerField("BaseStat-SpecialAttack", default=0)
     bs_d = models.IntegerField("BaseStat-SpecialDefense", default=0)
     bs_s = models.IntegerField("BaseStat-Speed", default=0)
+    type1 = models.CharField("Type1", max_length=8)
+    type2 = models.CharField("Type2", max_length=8)
 
     def __str__(self):
         return self.pokemon_name
