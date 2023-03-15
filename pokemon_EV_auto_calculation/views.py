@@ -77,3 +77,9 @@ def handler404(request, exception):
         "request_path": quote(request.path)
     }
     return render(request, "errors/404.html", context, status=404)
+
+def handler403(request, exception):
+    context = {
+        "request_path": quote(request.path)
+    }
+    return render(request, "errors/403.html", context, status=403)
