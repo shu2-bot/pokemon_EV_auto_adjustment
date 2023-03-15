@@ -72,8 +72,17 @@ def result(request):
         response = HttpResponseNotAllowed(["POST"])
         return response
 
+"""
 def handler404(request, exception):
     context = {
         "request_path": quote(request.path)
     }
-    return render(request, "errors/404.html", context, status=404)
+    return render(request, "404.html", context, status=404)
+"""
+
+
+def handler403(request, exception):
+    return render(request, "403.html", status=403)
+
+def handler400(request, exception):
+    return render(request, "400.html", status=400)
