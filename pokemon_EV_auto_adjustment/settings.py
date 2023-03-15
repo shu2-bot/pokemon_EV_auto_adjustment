@@ -58,6 +58,7 @@ ROOT_URLCONF = 'pokemon_EV_auto_adjustment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # DIRSのtemplates参照で404を勝手に参照している？
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
