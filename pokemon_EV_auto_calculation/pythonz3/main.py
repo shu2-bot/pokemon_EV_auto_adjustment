@@ -22,7 +22,7 @@ pokemon_me_type = {"type1": "grass", "type2": None}
 """
 # ピカチュウ
 pokemon_opposite1_bs = {"h_bs": 35, "a_bs": 55, "b_bs": 40, "c_bs": 50, "d_bs": 50, "s_bs": 90}
-pokemon_opposite1_ev = {"h_ev": 0, "a_ev": 252, "b_ev": 0, "c_ev": 0, "d_ev": 0, "s_ev": 252}
+pokemon_opposite1_ev = {"h_ev": 0, "a_ev": 252, "b_ev": 0, "c_ev": 0, "d_ev": 0, "s_ev": 40}
 pokemon_opposite1_type = {"type1": "electric", "type2": None}
 
 # ポッチャマ
@@ -61,7 +61,7 @@ pokemon_opposite1_stats_a = calculate.calculate_hpother(pokemon_opposite1_ev["a_
 
 # ダメージ計算
 # 10万ボルト
-attack_move_opposite1 = {"power": 90, "type": "electric"}
+attack_move_opposite1 = {"power": 100, "type": "electric"}
 damage_opposite1 = calculate.calculate_damage(attack_move_opposite1["power"], attack_move_opposite1["type"], pokemon_opposite1_type["type1"], pokemon_opposite1_type["type2"], pokemon_me_type["type1"], pokemon_me_type["type2"], pokemon_opposite1_stats_a, pokemon_me_stats_b)
 
 # 条件を追加
@@ -103,12 +103,16 @@ pokemon_opposite2_stats_b = calculate.calculate_hpother(pokemon_opposite1_ev["b_
 
 # ポケモンに与えるダメージを計算
 # タネ爆弾
-attack_move = {"power": 80, "type": "grass"}
+attack_move = {"power": 60, "type": "grass"}
 damage = calculate.calculate_damage(attack_move["power"], attack_move["type"], pokemon_me_type["type1"], pokemon_me_type["type2"], pokemon_opposite2_type["type1"], pokemon_opposite2_type["type2"], pokemon_me_stats_a, pokemon_opposite2_stats_b)
 
 # 条件を追加
 s.add(pokemon_opposite2_stats_h - damage <= 0)
 s.add(c_ev == 0)
+#s.add(h_ev == 0)
+#s.add(a_ev == 0)
+#s.add(b_ev == 0)
+#s.add(d_ev == 0)
 
 
 """
@@ -134,6 +138,49 @@ s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
 """
 
 # 解を探索
+min_hev = None
+min_aev = None
+min_bev = None
+min_cev = None
+min_dev = None
+min_sev = None
+min_sum = None
+while s.check() == sat:
+    # 解がある場合は、モデルを取得して表示します。
+    m = s.model()
+    hev_val = m[h_ev].as_long()
+    print('hev_val = ' + str(hev_val))
+    aev_val = m[a_ev].as_long()
+    print('aev_val = ' + str(aev_val))
+    bev_val = m[b_ev].as_long()
+    cev_val = m[c_ev].as_long()
+    dev_val = m[d_ev].as_long()
+    sev_val = m[s_ev].as_long()
+    sum_val = hev_val + aev_val + bev_val + cev_val + dev_val + sev_val
+    print('sum_val = ' + str(sum_val))
+    if (min_sum is None) or (sum_val < min_sum):
+        min_hev = hev_val
+        print('min_hev = ' + str(min_hev))
+        min_aev = aev_val
+        min_bev = bev_val
+        min_cev = cev_val
+        min_dev = dev_val
+        min_sev = sev_val
+        min_sum = sum_val
+    # 最後にチェックしたモデルを除外する制約条件を追加します。
+    s.add(Not(And(h_ev == m[h_ev], a_ev == m[a_ev], b_ev == m[b_ev], c_ev == m[c_ev], d_ev == m[d_ev], s_ev == m[s_ev])))
+
+print('--------------')
+print("min_aev = %s" % min_aev)
+print("min_hev = %s" % min_hev)
+print("min_bev = %s" % min_bev)
+print("min_cev = %s" % min_cev)
+print("min_dev = %s" % min_dev)
+print("min_sev = %s" % min_sev)
+print("min_sum = %s" % min_sum)
+
+"""
+
 while(True):
     if s.check() == sat:
         # 解の表示
@@ -145,29 +192,4 @@ while(True):
     else:
         print("failed to solve")
         break
-        
-
-"""
-if s.check() == sat:
-    # 解の表示
-    m = s.model()
-    print(m)
-
-    # 解を制約条件に追加
-    s.add(Not(And(h_ev == m[h_ev], a_ev == m[a_ev], b_ev == m[b_ev], c_ev == m[c_ev], d_ev == m[d_ev], s_ev == m[s_ev])))
-else:
-    print("failed to solve")
-"""
-# 解を取得
-# ans_p = is_true(m[p])
-"""
-
-# 解を探索
-while(s.check() == sat):
-    # 解の表示
-    m = s.model()
-    print(m)
-
-    # 解を制約条件に追加
-    s.add(Not(And(h_ev == m[h_ev], a_ev == m[a_ev], b_ev == m[b_ev], c_ev == m[c_ev], d_ev == m[d_ev], s_ev == m[s_ev])))
 """
