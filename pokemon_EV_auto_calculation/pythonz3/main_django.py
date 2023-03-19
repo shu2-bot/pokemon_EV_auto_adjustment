@@ -1,5 +1,6 @@
 from z3 import *
 from . import calculate_speed
+from . import calculate_attack
 
 def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list):
     # 自分のポケモンの努力値
@@ -28,14 +29,23 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
     # 素早さの条件をソルバーに追加
     if "y" in speed_list:
         min_sev = calculate_speed.calculate_speed(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, speed_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
-        s.add(ev_s == min_sev)
     else:
-        s.add(ev_s == 0)
+        min_sev == 0
+    s.add(ev_s == min_sev)
     
     # attackの条件を追加
+    # for文で回して、もし攻撃技が物理特赦ならどっちの関数を用いるか決める
     if "y" in attack_list:
-        min_aev = 0
+        min_aev = calculate_attack.calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev)
+    else:
+        min_aev == 0
+    s.add(ev_a == min_aev)
+
+    # 特殊攻撃の条件を追加
     # defenseの条件を追加
+    #特殊防御の条件を追加
+
+
 
     # 計算
     if s.check() == sat:

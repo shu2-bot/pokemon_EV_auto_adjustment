@@ -3,7 +3,7 @@ from django.http import HttpResponseNotAllowed
 from .forms import Calculation_input_form
 from .forms import Calculation_Select_Form 
 from .models import My_Pokemon_Input_Form
-from .models import Opposite_Pokemon_Input_Form
+#from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
 from .pythonz3 import main_django
 from urllib.parse import quote
