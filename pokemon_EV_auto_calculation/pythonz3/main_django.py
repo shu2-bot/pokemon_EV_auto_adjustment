@@ -26,11 +26,15 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
     attack_move_sample = 100
 
     # 素早さの条件をソルバーに追加
-    # もしspeed_listの中に"y"があれば検証、なければev_s == 0を追加して次に回す
-    min_sev = calculate_speed.calculate_speed(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, speed_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
-    s.add(ev_s == min_sev)
+    if "y" in speed_list:
+        min_sev = calculate_speed.calculate_speed(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, speed_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
+        s.add(ev_s == min_sev)
+    else:
+        s.add(ev_s == 0)
     
     # attackの条件を追加
+    if "y" in attack_list:
+        min_aev = 0
     # defenseの条件を追加
 
     # 計算
