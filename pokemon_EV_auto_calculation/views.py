@@ -44,6 +44,9 @@ def result(request):
         attack_list = request.POST.getlist("attack")
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
+
+        if ("Y" not in speed_list) and ("Y" not in attack_list) and ("Y" not in defense_list):
+            return render(request, "none.html")
         
         # 自分のポケモンの種族値を取得
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
