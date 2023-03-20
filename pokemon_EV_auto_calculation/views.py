@@ -5,9 +5,23 @@ from .forms import Calculation_Select_Form
 from .models import My_Pokemon_Input_Form
 #from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
+from .models import Move_Status
 from .pythonz3 import main_django
 from urllib.parse import quote
+from rest_framework.response import Response
+from rest_framework import viewsets
 
+"""
+# 同アプリで複数のDBを扱うためのクラス？
+class TestViewSet(viewsets.ModelViewSet):
+    queryset = ''
+    http_method_names = ["get"] # これでGETしかできないようになります
+
+    def list(self, request):
+        db1 = DatabaseOne.objects.all() #ここまでは普通のqueryset
+        db2 = DatabaseTwo.objects.db_manager("database2").all() # default以外のDB
+        return Response({"result": "オッケー！"})
+"""
 
 
 def input(request):
