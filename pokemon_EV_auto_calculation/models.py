@@ -21,6 +21,8 @@ class Move_Status(models.Model):
     category = models.CharField("Category", max_length=8)
     def __str__(self):
         return self.move_name
+    class Meta:
+        db_table = "move_status"
     
 # Not used
 """
