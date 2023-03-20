@@ -82,8 +82,32 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'move_status': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+"""
+# アプリケーションごとの接続先DBのマッピング
+DATABASE_APPS_MAPPING = {
+    # defaultには管理系のTable
+    'admin'              : 'default',
+    'auth'               : 'default',
+    'contenttypes'       : 'default',
+    'sessions'           : 'default',
+    'messages'           : 'default',
+    'staticfiles'        : 'default',
+    'django_celery_beat' : 'default',
+    # analyticsには分析計のTable
+    'myapp'              : 'analytics',
+}
+
+DATABASE_ROUTERS = [
+    'router.DatabaseRouter',
+]
+"""
 
 
 # Password validation
