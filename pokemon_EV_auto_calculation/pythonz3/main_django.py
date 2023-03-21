@@ -1,7 +1,8 @@
 from z3 import *
-from . import calculate
+from . import calculate_speed
+from . import calculate_attack
 
-def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, attack_list, defense_list):
+def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list):
     # 自分のポケモンの努力値
     ev_h = Int("ev_h")
     ev_a = Int("ev_a")
@@ -25,8 +26,26 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
 
     attack_move_sample = 100
 
-    if speed_list[0] == "on":
-        compare_speed(s, my_pokemon_bs[0]["bs_s"], ev_s, opposite_pokemon_bs[0]["bs_s"], opposite_pokemon_ev["ev_s"])
+    # 素早さの条件をソルバーに追加
+    if "y" in speed_list:
+        min_sev = calculate_speed.calculate_speed(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, speed_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
+    else:
+        min_sev == 0
+    s.add(ev_s == min_sev)
+    
+    # attackの条件を追加
+    # for文で回して、もし攻撃技が物理特赦ならどっちの関数を用いるか決める
+    if "y" in attack_list:
+        min_aev = calculate_attack.calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev)
+    else:
+        min_aev == 0
+    s.add(ev_a == min_aev)
+
+    # 特殊攻撃の条件を追加
+    # defenseの条件を追加
+    #特殊防御の条件を追加
+
+
 
     # 計算
     if s.check() == sat:
@@ -40,14 +59,10 @@ def main(my_pokemon_bs, opposite_pokemon_bs, opposite_pokemon_ev, speed_list, at
         return ans_list
 
 
-# 関数に直してく
-# 素早さの比較
-def compare_speed(s, my_pokemon_bs_s, ev_s, opposite_pokemon_bs_s, opposite_pokemon_ev_s):
-    # 自ポケモンの素早さを計算
-    pokemon_me_stats_s = calculate.calculate_hpother(ev_s, my_pokemon_bs_s)
+# 攻撃するとき
+"""
+技のDBを作成
+名前　威力　タイプ　物理か特殊化
 
-    # 敵ポケモンの素早さを計算
-    pokemon_opposite1_stats_s = calculate.calculate_hpother(int(opposite_pokemon_ev_s), (opposite_pokemon_bs_s))
 
-    # 条件を追加
-    s.add(pokemon_me_stats_s > pokemon_opposite1_stats_s)
+"""

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,8 +26,9 @@ SECRET_KEY = 'django-insecure-f1x*c=e)38g5x9q#b0)okst@v4*n-7wg!j#5euj=^d$o(tonm9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# DEBUGをFALSEにするときはなにかしらのホストを追加する必要がある
+#ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pokemon_EV_auto_calculation.apps.PokemonEvAutoCalculationConfig',
     'django_bootstrap5',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +59,8 @@ ROOT_URLCONF = 'pokemon_EV_auto_adjustment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # DIRSのtemplates参照で404を勝手に参照している？
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,8 +83,32 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'move_status': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+"""
+# アプリケーションごとの接続先DBのマッピング
+DATABASE_APPS_MAPPING = {
+    # defaultには管理系のTable
+    'admin'              : 'default',
+    'auth'               : 'default',
+    'contenttypes'       : 'default',
+    'sessions'           : 'default',
+    'messages'           : 'default',
+    'staticfiles'        : 'default',
+    'django_celery_beat' : 'default',
+    # analyticsには分析計のTable
+    'myapp'              : 'analytics',
+}
+
+DATABASE_ROUTERS = [
+    'router.DatabaseRouter',
+]
+"""
 
 
 # Password validation
