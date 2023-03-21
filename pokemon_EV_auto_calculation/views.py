@@ -66,7 +66,12 @@ def result(request):
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
 
-        if ("Y" not in speed_list) and ("Y" not in attack_list) and ("Y" not in defense_list):
+        # ポケモンの技を取得
+        my_move_list = request.POST.getlist("move_name")
+        print(my_move_list)
+
+        # もし検証項目が入力されていなかったら，正しい入力するように促す
+        if ("y" not in speed_list) and ("y" not in attack_list) and ("y" not in defense_list):
             return render(request, "none.html")
         
         # 自分のポケモンの種族値を取得
