@@ -66,9 +66,19 @@ def result(request):
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
 
-        # ポケモンの技を取得
-        my_move_list = request.POST.getlist("move_name")
-        print(my_move_list)
+        # ポケモンの技をHTMLから取得
+        move_list = request.POST.getlist("move_name")
+        print(move_list)
+
+        move_type_category_power_list = []
+        for val in move_list:
+            if val == "":
+                continue
+            else:
+                move_type_category_power = Move_Status.objects.filter(move_name = val).values("type", "category", "power")
+                move_type_category_power_list.append(move_type_category_power)
+        
+        print(move_type_category_power_list)
 
         # もし検証項目が入力されていなかったら，正しい入力するように促す
         if ("y" not in speed_list) and ("y" not in attack_list) and ("y" not in defense_list):
@@ -85,7 +95,7 @@ def result(request):
 
         # 自分のポケモンの努力値を導くため, それ以外の要素を入力
         # 検証結果はans_listに格納
-        ans_list = main_django.main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list)
+        ans_list = main_django.main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, speed_list, attack_list, defense_list, move_type_category_power_list)
         
         # htmlに表示する時、リストの値をpopして取得するため逆向きにしている
         status_name_list = ["すばやさ", "とくぼう", "とくこう", "ぼうぎょ", "こうげき", "HP"]
