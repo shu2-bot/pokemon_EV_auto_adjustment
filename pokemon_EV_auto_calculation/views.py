@@ -73,7 +73,7 @@ def result(request):
         move_type_category_power_list = []
         for val in move_list:
             if val == "":
-                continue
+                move_type_category_power_list.append("")
             else:
                 move_type_category_power = Move_Status.objects.filter(move_name = val).values("type", "category", "power")
                 move_type_category_power_list.append(move_type_category_power)
@@ -85,12 +85,12 @@ def result(request):
             return render(request, "none.html")
         
         # 自分のポケモンの種族値を取得
-        my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+        my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s", "type1", "type2")
         
         # 相手のポケモンの種族値をリストに追加
         opposite_pokemon_bs_list = []
         for i in range(len(pokemon_name_list) - 1):
-            opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[i + 1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")
+            opposite_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[i + 1]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s", "type1", "type2")
             opposite_pokemon_bs_list.append(opposite_pokemon_bs)
 
         # 自分のポケモンの努力値を導くため, それ以外の要素を入力
