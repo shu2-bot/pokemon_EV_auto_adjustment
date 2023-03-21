@@ -6,10 +6,15 @@ from .models import My_Pokemon_Input_Form
 #from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
 from .models import Move_Status
+from .models import My_Move_Input_Form
+from .models import Opposite_Move_Input_Form
 from .pythonz3 import main_django
 from urllib.parse import quote
+"""
 from rest_framework.response import Response
 from rest_framework import viewsets
+"""
+
 
 """
 # 同アプリで複数のDBを扱うためのクラス？
@@ -31,6 +36,8 @@ def input(request):
             #"opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
             "opposite_pokemon_form": Calculation_input_form(),
             "calculation_select_form": Calculation_Select_Form(),
+            "my_move_input_form": My_Move_Input_Form(),
+            "opposite_move_input_form": Opposite_Move_Input_Form(),
         }
         return render(request, "input.html", params)
     
