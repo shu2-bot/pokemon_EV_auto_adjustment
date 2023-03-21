@@ -1,4 +1,4 @@
-
+# Not Used
 
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pokemon_EV_auto_adjustment.settings')
