@@ -3,11 +3,30 @@ from django.http import HttpResponseNotAllowed
 from .forms import Calculation_input_form
 from .forms import Calculation_Select_Form 
 from .models import My_Pokemon_Input_Form
-from .models import Opposite_Pokemon_Input_Form
+#from .models import Opposite_Pokemon_Input_Form
 from .models import Pokemon_status
+from .models import Move_Status
+from .models import My_Move_Input_Form
+from .models import Opposite_Move_Input_Form
 from .pythonz3 import main_django
 from urllib.parse import quote
+"""
+from rest_framework.response import Response
+from rest_framework import viewsets
+"""
 
+
+"""
+# 同アプリで複数のDBを扱うためのクラス？
+class TestViewSet(viewsets.ModelViewSet):
+    queryset = ''
+    http_method_names = ["get"] # これでGETしかできないようになります
+
+    def list(self, request):
+        db1 = DatabaseOne.objects.all() #ここまでは普通のqueryset
+        db2 = DatabaseTwo.objects.db_manager("database2").all() # default以外のDB
+        return Response({"result": "オッケー！"})
+"""
 
 
 def input(request):
@@ -17,6 +36,8 @@ def input(request):
             #"opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
             "opposite_pokemon_form": Calculation_input_form(),
             "calculation_select_form": Calculation_Select_Form(),
+            "my_move_input_form": My_Move_Input_Form(),
+            "opposite_move_input_form": Opposite_Move_Input_Form(),
         }
         return render(request, "input.html", params)
     
@@ -44,6 +65,9 @@ def result(request):
         attack_list = request.POST.getlist("attack")
         defense_list = request.POST.getlist("defense")
         print(speed_list, attack_list, defense_list)
+
+        if ("Y" not in speed_list) and ("Y" not in attack_list) and ("Y" not in defense_list):
+            return render(request, "none.html")
         
         # 自分のポケモンの種族値を取得
         my_pokemon_bs = Pokemon_status.objects.filter(pokemon_name = pokemon_name_list[0]).values("bs_h", "bs_a", "bs_b", "bs_c", "bs_d", "bs_s")

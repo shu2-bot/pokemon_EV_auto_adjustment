@@ -11,6 +11,8 @@
 - forms.pyのcheckboxからPOSTで値を取得できない
   - choicefieldを使うことで解決
 
+- 「python manage.py shell」でDBを操作できる
+
 ### javascript
 - jsでタブを閉じる関数が使えない
   - 動的に生成されたものでなく、ユーザーが自発的に開いたサイトは閉じられない
