@@ -37,8 +37,9 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
     # for文で回して、もし攻撃技が物理特赦ならどっちの関数を用いるか決める
     if "y" in attack_list:
         attack_move_list = []
-        for i in range(len(move_type_category_power_list)/2):
+        for i in range(int(len(move_type_category_power_list)/2)):
             attack_move_list.append(move_type_category_power_list[i * 2])
+            print('attack_move_list = ' + str(attack_move_list))
         min_aev, min_cev = calculate_attack.calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list, attack_move_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
     else:
         min_aev == 0

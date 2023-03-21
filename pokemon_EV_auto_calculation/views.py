@@ -73,7 +73,7 @@ def result(request):
         move_type_category_power_list = []
         for val in move_list:
             if val == "":
-                continue
+                move_type_category_power_list.append("")
             else:
                 move_type_category_power = Move_Status.objects.filter(move_name = val).values("type", "category", "power")
                 move_type_category_power_list.append(move_type_category_power)
