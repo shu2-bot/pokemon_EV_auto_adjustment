@@ -19,6 +19,7 @@ class Move_Status(models.Model):
     move_name = models.CharField("Name", max_length=12)
     type = models.CharField("Type", max_length=8)
     category = models.CharField("Category", max_length=8)
+    power = models.IntegerField("Power", default=0)
     def __str__(self):
         return self.move_name
     class Meta:
