@@ -30,7 +30,7 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
     if "y" in speed_list:
         min_sev = calculate_speed.calculate_speed(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, speed_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
     else:
-        min_sev == 0
+        min_sev = 0
     s.add(ev_s == min_sev)
     
     # attackの条件を追加
@@ -42,8 +42,8 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
             print('attack_move_list = ' + str(attack_move_list))
         min_aev, min_cev = calculate_attack.calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list, attack_move_list, my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list)
     else:
-        min_aev == 0
-        min_cev == 0
+        min_aev = 0
+        min_cev = 0
     s.add(ev_a == min_aev)
     s.add(ev_c == min_cev)
 
