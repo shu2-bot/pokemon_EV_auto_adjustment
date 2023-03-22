@@ -17,7 +17,7 @@ def calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list
         if attack_list[i] == "y":
             print(attack_move_list)
             if attack_move_list[i][0]["category"] == "physical":
-                compare_attack()
+                compare_attack(s_copy, ev_a, my_pokemon_bs[0]["bs_a"], opposite_pokemon_ev_list["ev_h"][i], opposite_pokemon_bs_list[i][0]["bs_h"], opposite_pokemon_ev_list["ev_b"][i], opposite_pokemon_bs_list[i][0]["bs_b"], attack_move_list[i][0]["power"], attack_move_list[i][0]["type"], my_pokemon_bs[0]["type1"], my_pokemon_bs[0]["type2"], opposite_pokemon_bs_list[i][0]["type1"], opposite_pokemon_bs_list[i][0]["type2"])
             # s_copyに条件を追加
             elif attack_move_list[i][0]["category"] == "special":
                 compare_spacial_attack(s_copy, ev_c, my_pokemon_bs[0]["bs_c"], opposite_pokemon_ev_list["ev_h"][i], opposite_pokemon_bs_list[i][0]["bs_h"], opposite_pokemon_ev_list["ev_d"][i], opposite_pokemon_bs_list[i][0]["bs_d"], attack_move_list[i][0]["power"], attack_move_list[i][0]["type"], my_pokemon_bs[0]["type1"], my_pokemon_bs[0]["type2"], opposite_pokemon_bs_list[i][0]["type1"], opposite_pokemon_bs_list[i][0]["type2"])
@@ -42,8 +42,21 @@ def calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list
     print("min_cev = " + str(min_cev))
     return min_aev, min_cev
 
-def compare_attack():
-    return
+def compare_attack(s_copy, ev_a, my_pokemon_bs_a, opposite_pokemon_ev_h, opposite_pokemon_bs_h, opposite_pokemon_ev_b, opposite_pokemon_bs_b, attack_move_power, attack_move_type, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_type1, opposite_pokemon_type2):
+    # 自ポケモンの攻撃力を計算
+    my_pokemon_status_a = calculate.calculate_hpother(ev_a, my_pokemon_bs_a)
+
+    # 敵ポケモンのHPを計算
+    opposite_pokemon_status_h = calculate.calculate_hp(int(opposite_pokemon_ev_h), opposite_pokemon_bs_h)
+
+    # 敵ポケモンの防御力を計算
+    opposite_pokemon_status_b = calculate.calculate_hpother(int(opposite_pokemon_ev_b), opposite_pokemon_bs_b)
+
+    # ポケモンに与えるダメージを計算
+    damage = calculate.calculate_damage(attack_move_power, attack_move_type, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_type1, opposite_pokemon_type2, my_pokemon_status_a, opposite_pokemon_status_b)
+
+    # 条件を追加
+    s_copy.add(opposite_pokemon_status_h - damage <= 0)
 
 def compare_spacial_attack(s_copy, ev_c, my_pokemon_bs_c, opposite_pokemon_ev_h, opposite_pokemon_bs_h, opposite_pokemon_ev_d, opposite_pokemon_bs_d, attack_move_power, attack_move_type, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_type1, opposite_pokemon_type2):
     # 自ポケモンの攻撃力を計算
