@@ -32,6 +32,7 @@ def calculate_hpother(ev, bs):
 
 ## ポケモンのタイプ相性の判断
 def type_compatibility(attack_move_type, attack_pokemon_type1, attack_pokemon_type2, defense_pokemon_type1, defense_pokemon_type2):
+    defense_pokemon_type2_id = 1
     # 威力の倍率
     val = 1
     # タイプ一致なら1.5倍
@@ -56,6 +57,6 @@ def type_compatibility(attack_move_type, attack_pokemon_type1, attack_pokemon_ty
             if defense_pokemon_type2 != None:
                 val2 = type_table.type_table[i][defense_pokemon_type2_id + 1]
                 val = val * val2
-            break
+                break
     print("攻撃力" + str(val) + "倍!")
     return val

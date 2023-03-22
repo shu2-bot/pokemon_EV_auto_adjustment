@@ -12,6 +12,7 @@
   - choicefieldを使うことで解決
 
 - 「python manage.py shell」でDBを操作できる
+- python manage.py makemigrations アプリ名 で作成
 
 ### javascript
 - jsでタブを閉じる関数が使えない
@@ -19,6 +20,9 @@
 
 - js clonenodeから値を操作する方法は見つからなかった
   - 値の取得はできる
+
+## メモ
+smaple = Pokemon_status(pokemon_name="ピカチュウ", bs_h=35, bs_a=55, bs_b=40, bs_c=50, bs_d=50, bs_s=90, type1="electric", type2="None")
 
 ## 目標
 - 短期的目標
