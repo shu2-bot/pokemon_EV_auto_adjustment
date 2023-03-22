@@ -21,10 +21,25 @@ def calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list
             # s_copyに条件を追加
             elif attack_move_list[i][0]["category"] == "special":
                 compare_spacial_attack(s_copy, ev_c, my_pokemon_bs[0]["bs_c"], opposite_pokemon_ev_list["ev_h"][i], opposite_pokemon_bs_list[i][0]["bs_h"], opposite_pokemon_ev_list["ev_d"][i], opposite_pokemon_bs_list[i][0]["bs_d"], attack_move_list[i][0]["power"], attack_move_list[i][0]["type"], my_pokemon_bs[0]["type1"], my_pokemon_bs[0]["type2"], opposite_pokemon_bs_list[i][0]["type1"], opposite_pokemon_bs_list[i][0]["type2"])
-            
+    
+    min_aev = None
+    min_cev = None
+    while s_copy.check() == sat:
+        # 解がある場合は、モデルを取得して表示します。
+        m_copy = s_copy.model()
+        aev_val = m_copy[ev_a].as_long()
+        cev_val = m_copy[ev_c].as_long()
+        if (min_aev is None) or (aev_val < min_aev):
+            min_aev = aev_val
+        if (min_cev is None) or (cev_val < min_cev):
+            min_cev = cev_val
+        # 最後にチェックしたモデルを除外する制約条件を追加します。
+        s_copy.add(Not(And(ev_a == m_copy[ev_a])))
+        s_copy.add(Not(And(ev_c == m_copy[ev_c])))
 
-    min_aev = 0
-    min_cev = 0
+    # 素早さの条件を取得
+    print("min_aev = " + str(min_aev))
+    print("min_cev = " + str(min_cev))
     return min_aev, min_cev
 
 def compare_attack():
