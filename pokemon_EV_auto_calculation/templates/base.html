@@ -10,13 +10,18 @@
         <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
+        <header>
+            <h1>努力値調整ツール</h1>
+        </header>
         <main>
             <div class="container">
                 {% block main %}{% endblock %}
             </div>
         </main>
         <footer>
-            <small class="text-center">© 2023 Shu2</small>
+            <div class="text-center">
+                <small>© 2023 Shu2</small>
+            </div>
         </footer>
     </body>
 </html>
