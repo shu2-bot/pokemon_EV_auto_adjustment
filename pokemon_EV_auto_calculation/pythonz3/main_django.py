@@ -73,5 +73,5 @@ def main(my_pokemon_bs, opposite_pokemon_bs_list, opposite_pokemon_ev_list, spee
         # 計算後の努力値を返す
         return ans_list
     else:
-        ans_list = ["failed to solve"]
+        ans_list = ["すまねえな、そんな都合のいい調整はないってよ"]
         return ans_list
