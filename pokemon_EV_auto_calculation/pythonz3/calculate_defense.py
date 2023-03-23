@@ -32,16 +32,27 @@ def calculate_defense(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, min_aev, m
         bev_val = m_copy[ev_b].as_long()
         dev_val = m_copy[ev_d].as_long()
         sum_val = hev_val + bev_val + dev_val
-        print('sum_val = ' + str(sum_val))
         if (min_sum is None) or (sum_val < min_sum):
+            print('sum_val = ' + str(sum_val))
             min_sum = sum_val
             min_hev = hev_val
             min_bev = bev_val
             min_dev = dev_val
+
+            s_copy.add(And(ev_h <= m_copy[ev_h]))
+            s_copy.add(And(ev_b <= m_copy[ev_b]))
+            s_copy.add(And(ev_d <= m_copy[ev_d]))
         # 最後にチェックしたモデルを除外する制約条件を追加します。
-        s_copy.add(Not(And(ev_h == m_copy[ev_h])))
-        s_copy.add(Not(And(ev_b == m_copy[ev_b])))
-        s_copy.add(Not(And(ev_d == m_copy[ev_d])))
+        s_copy.add(Not(And(ev_h == m_copy[ev_h], ev_b == m_copy[ev_b], ev_d == m_copy[ev_d])))
+        
+        # これだとEVH＝0の時が1回しか回せない
+        #s_copy.add(Not(And(ev_h <= m_copy[ev_h])))
+        #s_copy.add(Not(And(ev_b <= m_copy[ev_b])))
+        #s_copy.add(Not(And(ev_d <= m_copy[ev_d])))
+
+        
+        
+        
 
     # 素早さの条件を取得
     print("min_hev = " + str(min_hev))
@@ -58,7 +69,7 @@ def compare_defense(s_copy, ev_h, ev_b, my_pokemon_bs_h, my_pokemon_bs_b, opposi
     my_pokemon_status_b = calculate.calculate_hpother(ev_b, my_pokemon_bs_b)
 
     # 敵ポケモンの攻撃力を計算
-    opposite_pokemon_status_a = calculate.calculate_hpother(int(opposite_pokemon_ev_a), int(opposite_pokemon_bs_a))
+    opposite_pokemon_status_a = calculate.calculate_hpother(int(opposite_pokemon_ev_a), opposite_pokemon_bs_a)
 
     # ダメージ計算
     damage = calculate.calculate_damage(defense_move_power, defense_move_type, opposite_pokemon_type1, opposite_pokemon_type2, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_status_a, my_pokemon_status_b)
@@ -75,7 +86,7 @@ def compare_spacial_defense(s_copy, ev_h, ev_d, my_pokemon_bs_h, my_pokemon_bs_d
     my_pokemon_status_d = calculate.calculate_hpother(ev_d, my_pokemon_bs_d)
 
     # 敵ポケモンの攻撃力を計算
-    opposite_pokemon_status_c = calculate.calculate_hpother(int(opposite_pokemon_ev_c), int(opposite_pokemon_bs_c))
+    opposite_pokemon_status_c = calculate.calculate_hpother(int(opposite_pokemon_ev_c), opposite_pokemon_bs_c)
 
     # ダメージ計算
     damage = calculate.calculate_damage(defense_move_power, defense_move_type, opposite_pokemon_type1, opposite_pokemon_type2, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_status_c, my_pokemon_status_d)
