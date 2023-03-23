@@ -42,6 +42,7 @@ def calculate_attack(s, ev_h, ev_a, ev_b, ev_c, ev_d, ev_s, min_sev, attack_list
     print("min_cev = " + str(min_cev))
     return min_aev, min_cev
 
+# 攻撃の場合
 def compare_attack(s_copy, ev_a, my_pokemon_bs_a, opposite_pokemon_ev_h, opposite_pokemon_bs_h, opposite_pokemon_ev_b, opposite_pokemon_bs_b, attack_move_power, attack_move_type, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_type1, opposite_pokemon_type2):
     # 自ポケモンの攻撃力を計算
     my_pokemon_status_a = calculate.calculate_hpother(ev_a, my_pokemon_bs_a)
@@ -58,6 +59,7 @@ def compare_attack(s_copy, ev_a, my_pokemon_bs_a, opposite_pokemon_ev_h, opposit
     # 条件を追加
     s_copy.add(opposite_pokemon_status_h - damage <= 0)
 
+# 特殊攻撃の場合
 def compare_spacial_attack(s_copy, ev_c, my_pokemon_bs_c, opposite_pokemon_ev_h, opposite_pokemon_bs_h, opposite_pokemon_ev_d, opposite_pokemon_bs_d, attack_move_power, attack_move_type, my_pokemon_type1, my_pokemon_type2, opposite_pokemon_type1, opposite_pokemon_type2):
     # 自ポケモンの攻撃力を計算
     my_pokemon_status_c = calculate.calculate_hpother(ev_c, my_pokemon_bs_c)

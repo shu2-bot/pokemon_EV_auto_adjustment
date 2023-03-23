@@ -31,11 +31,13 @@ class TestViewSet(viewsets.ModelViewSet):
 
 def input(request):
     if request.method == "GET":
+        Calculation_Select_Form_List = ["防御力を検証しますか？", "攻撃力を検証しますか？", "素早さを検証しますか？"]
         params = {
             "my_pokemon_form": My_Pokemon_Input_Form(),
             #"opposite_pokemon_form": Opposite_Pokemon_Input_Form(),
             "opposite_pokemon_form": Calculation_input_form(),
             "calculation_select_form": Calculation_Select_Form(),
+            "calculation_select_form_list": Calculation_Select_Form_List,
             "my_move_input_form": My_Move_Input_Form(),
             "opposite_move_input_form": Opposite_Move_Input_Form(),
         }
