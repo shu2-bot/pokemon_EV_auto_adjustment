@@ -9,6 +9,9 @@ class Calculation_input_form(forms.Form):
     ev_d = forms.IntegerField(label="EffortValue-SpecialDefense", initial=0)
     ev_s = forms.IntegerField(label="EffortValue-Speed", initial=0)
 
+    def clean_data(self, val):
+        val = self.cleaned_data("EffortValue-HP")
+
 
 class Calculation_Select_Form(forms.Form):
     CHOICE = (
