@@ -1,0 +1,1268 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 13:44:13 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55bab4eeb9d0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55bab4eeb9d0 pid: 49476 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 49476)
+spawned uWSGI worker 1 (pid: 49477, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 13:46:54 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5626d70dca40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 49513)
+spawned uWSGI worker 1 (pid: 49514, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 14:19:41 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5634157efa40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 49607)
+spawned uWSGI worker 1 (pid: 49608, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 14:24:07 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a5e332aa40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 49693)
+spawned uWSGI worker 1 (pid: 49694, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 14:31:10 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560199210a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 50059)
+spawned uWSGI worker 1 (pid: 50060, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 14:43:58 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b3c83e0a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 50707)
+spawned uWSGI worker 1 (pid: 50708, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 20:27:18 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d751132a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51246)
+spawned uWSGI worker 1 (pid: 51247, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 20:27:27 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c3976f8a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51248)
+spawned uWSGI worker 1 (pid: 51249, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 20:37:08 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563236ea7a20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51306)
+spawned uWSGI worker 1 (pid: 51307, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 20:42:17 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559ed8cb2a20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51348)
+spawned uWSGI worker 1 (pid: 51349, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 20:50:10 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563d14e47a00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51409)
+spawned uWSGI worker 1 (pid: 51410, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/1] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:13:02 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/2] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:15:06 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/3] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:15:07 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/4] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:15:36 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (1 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/5] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:15:37 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/6] 64.62.197.45 () {34 vars in 490 bytes} [Mon Apr  3 21:15:43 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 51410|app: -1|req: -1/7] 222.10.135.77 () {44 vars in 1100 bytes} [Mon Apr  3 21:16:13 2023] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 23:37:04 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559d44384a60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 52239)
+spawned uWSGI worker 1 (pid: 52240, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 23:38:15 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560c4b1c9a60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 52257)
+spawned uWSGI worker 1 (pid: 52258, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 23:39:06 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b415862a40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 52266)
+spawned uWSGI worker 1 (pid: 52267, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 23:44:55 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5650d569fa40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named '/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 52331)
+spawned uWSGI worker 1 (pid: 52332, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Apr  3 23:49:10 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55985769b9b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55985769b9b0 pid: 52385 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 52385)
+spawned uWSGI worker 1 (pid: 52387, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:13:41 2023] ***
+compiled with version: 11.3.0 on 26 March 2023 02:06:46
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55836e0679b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55836e0679b0 pid: 53301 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 53301)
+spawned uWSGI worker 1 (pid: 53302, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:21:51 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f9dc9bd350
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f9dc9bd350 pid: 53939 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 53939)
+spawned uWSGI worker 1 (pid: 53940, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:31:34 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5623395443a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'pokemon_EV_auto_adjustment'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 54019)
+spawned uWSGI worker 1 (pid: 54020, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:33:40 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustmentt
+chdir(): No such file or directory [core/uwsgi.c line 2625]
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:34:10 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustmentt
+chdir(): No such file or directory [core/uwsgi.c line 2625]
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:35:15 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustmentt
+chdir(): No such file or directory [core/uwsgi.c line 2625]
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:35:44 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustmentt
+chdir(): No such file or directory [core/uwsgi.c line 2625]
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 00:36:28 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5589a9aa3350
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5589a9aa3350 pid: 54108 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 54108)
+spawned uWSGI worker 1 (pid: 54109, cores: 1)
+Gracefully killing worker 1 (pid: 54109)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/shu2/pokemon/pokemon-ev
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock)
+running /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Apr  4 02:55:03 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559df57c51e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559df57c51e0 pid: 54108 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 54108)
+spawned uWSGI worker 1 (pid: 55038, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 10:37:47 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c568ac8350
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c568ac8350 pid: 60730 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 60730)
+spawned uWSGI worker 1 (pid: 60731, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 11:46:07 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:3031 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55cee6b39760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55cee6b39760 pid: 61160 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61160)
+spawned uWSGI worker 1 (pid: 61161, cores: 1)
+spawned uWSGI http 1 (pid: 61162)
+[pid: 61161|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 1027 bytes} [Wed Apr  5 11:46:14 2023] GET / => generated 143 bytes in 169 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 0)
+[pid: 61161|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 641 bytes} [Wed Apr  5 11:46:51 2023] GET / => generated 143 bytes in 11 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 0)
+[pid: 61161|app: 0|req: 3/3] 127.0.0.1 () {28 vars in 296 bytes} [Wed Apr  5 11:46:53 2023] GET / => generated 143 bytes in 14 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 12:31:51 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558482eb3350
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558482eb3350 pid: 61244 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61244)
+spawned uWSGI worker 1 (pid: 61245, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:23:19 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d38da4a350
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d38da4a350 pid: 61685 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61685)
+spawned uWSGI worker 1 (pid: 61686, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:34:33 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on www.shu2-lab.com fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c70583d450
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c70583d450 pid: 61800 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61800)
+spawned uWSGI worker 1 (pid: 61801, cores: 1)
+spawned uWSGI http 1 (pid: 61802)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:37:53 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Permission denied [core/socket.c line 769]
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:39:31 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c01d22e760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c01d22e760 pid: 61869 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61869)
+spawned uWSGI worker 1 (pid: 61870, cores: 1)
+spawned uWSGI http 1 (pid: 61871)
+[pid: 61870|app: 0|req: 1/1] 127.0.0.1 () {28 vars in 294 bytes} [Wed Apr  5 17:39:56 2023] GET / => generated 143 bytes in 192 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:43:23 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on www.shu2-lab.com:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557bd29429b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557bd29429b0 pid: 61897 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61897)
+spawned uWSGI worker 1 (pid: 61898, cores: 1)
+spawned uWSGI http 1 (pid: 61899)
+[pid: 61898|app: 0|req: 1/1] 162.43.19.173 () {28 vars in 307 bytes} [Wed Apr  5 17:43:36 2023] GET / => generated 4666 bytes in 186 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 17:46:17 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on www.shu2-lab.com:10022 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5638326999b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5638326999b0 pid: 61927 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61927)
+spawned uWSGI worker 1 (pid: 61928, cores: 1)
+spawned uWSGI http 1 (pid: 61929)
+[pid: 61928|app: 0|req: 1/1] 162.43.19.173 () {28 vars in 309 bytes} [Wed Apr  5 17:46:31 2023] GET / => generated 4666 bytes in 172 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 18:09:54 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559e505143a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559e505143a0 pid: 62029 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62029)
+spawned uWSGI worker 1 (pid: 62030, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 18:16:59 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f3debe23a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f3debe23a0 pid: 62074 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62074)
+spawned uWSGI worker 1 (pid: 62075, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:24:12 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Permission denied [core/socket.c line 769]
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:42:57 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55edda5c23a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55edda5c23a0 pid: 62491 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62491)
+spawned uWSGI worker 1 (pid: 62492, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:45:06 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on www.shu2-lab.com:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5612c5edd9b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5612c5edd9b0 pid: 62508 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62508)
+spawned uWSGI worker 1 (pid: 62509, cores: 1)
+spawned uWSGI http 1 (pid: 62510)
+[pid: 62509|app: 0|req: 1/1] 162.43.19.173 () {28 vars in 307 bytes} [Wed Apr  5 21:45:22 2023] GET / => generated 4666 bytes in 201 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:51:27 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b400d293a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b400d293a0 pid: 62637 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62637)
+spawned uWSGI worker 1 (pid: 62638, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:58:37 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563a7b892990
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563a7b892990 pid: 62697 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62697)
+spawned uWSGI worker 1 (pid: 62698, cores: 1)
+spawned uWSGI http 1 (pid: 62699)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr  5 21:58:49 2023] ***
+compiled with version: 11.3.0 on 03 April 2023 15:21:02
+os: Linux-5.15.0-67-generic #74-Ubuntu SMP Wed Feb 22 14:14:39 UTC 2023
+nodename: x162-43-19-173
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 3
+current working directory: /home/shu2/pokemon/pokemon-ev
+writing pidfile to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.pid
+detected binary path: /home/shu2/pokemon/pokemon-ev/bin/uwsgi
+chdir() to /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment
+your processes number limit is 7723
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 3
+uwsgi socket 0 bound to UNIX address /home/shu2/pokemon/pokemon-ev/pokemon_EV_auto_adjustment/pokemon_EV_auto_adjustment.sock fd 6
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56524b9ee990
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145808 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56524b9ee990 pid: 62701 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62701)
+spawned uWSGI worker 1 (pid: 62702, cores: 1)
+spawned uWSGI http 1 (pid: 62703)
+[pid: 62702|app: 0|req: 1/1] 127.0.0.1 () {28 vars in 296 bytes} [Wed Apr  5 21:59:08 2023] GET / => generated 4666 bytes in 186 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 2/2] 127.0.0.1 () {28 vars in 296 bytes} [Wed Apr  5 22:03:24 2023] GET / => generated 4666 bytes in 12 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 3/3] 127.0.0.1 () {40 vars in 1032 bytes} [Wed Apr  5 22:09:56 2023] GET / => generated 4666 bytes in 12 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 4/4] 127.0.0.1 () {38 vars in 951 bytes} [Wed Apr  5 22:09:56 2023] GET /static/script.js => generated 1139 bytes in 3 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 5/5] 127.0.0.1 () {38 vars in 966 bytes} [Wed Apr  5 22:09:56 2023] GET /static/style.css => generated 1139 bytes in 0 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 6/6] 127.0.0.1 () {38 vars in 966 bytes} [Wed Apr  5 22:09:56 2023] GET /static/style.css => generated 1139 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 7/7] 127.0.0.1 () {38 vars in 1002 bytes} [Wed Apr  5 22:09:57 2023] GET /favicon.ico => generated 1134 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 8/8] 127.0.0.1 () {36 vars in 604 bytes} [Wed Apr  5 22:10:57 2023] GET / => generated 4666 bytes in 9 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 9/9] 127.0.0.1 () {38 vars in 638 bytes} [Wed Apr  5 22:10:57 2023] GET /static/script.js => generated 1139 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 10/10] 127.0.0.1 () {38 vars in 653 bytes} [Wed Apr  5 22:10:57 2023] GET /static/style.css => generated 1139 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 11/11] 127.0.0.1 () {38 vars in 644 bytes} [Wed Apr  5 22:11:16 2023] GET / => generated 4666 bytes in 10 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 12/12] 127.0.0.1 () {38 vars in 638 bytes} [Wed Apr  5 22:11:16 2023] GET /static/script.js => generated 1139 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 13/13] 127.0.0.1 () {38 vars in 653 bytes} [Wed Apr  5 22:11:16 2023] GET /static/style.css => generated 1139 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 14/14] 127.0.0.1 () {38 vars in 628 bytes} [Wed Apr  5 22:11:17 2023] GET /favicon.ico => generated 1134 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 15/15] 127.0.0.1 () {34 vars in 481 bytes} [Wed Apr  5 22:13:14 2023] GET /apple-touch-icon.png => generated 1143 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 16/16] 127.0.0.1 () {34 vars in 505 bytes} [Wed Apr  5 22:13:14 2023] GET /apple-touch-icon-precomposed.png => generated 1155 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 17/17] 127.0.0.1 () {34 vars in 463 bytes} [Wed Apr  5 22:13:14 2023] GET /favicon.ico => generated 1134 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 18/18] 127.0.0.1 () {36 vars in 604 bytes} [Wed Apr  5 22:13:16 2023] GET / => generated 4666 bytes in 11 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 19/19] 127.0.0.1 () {34 vars in 507 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-120x120-precomposed.png => generated 1163 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 20/20] 127.0.0.1 () {34 vars in 483 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-120x120.png => generated 1151 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 21/21] 127.0.0.1 () {34 vars in 491 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-precomposed.png => generated 1155 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 22/22] 127.0.0.1 () {34 vars in 467 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon.png => generated 1143 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 23/23] 127.0.0.1 () {34 vars in 449 bytes} [Wed Apr  5 22:13:16 2023] GET /favicon.ico => generated 1134 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 24/24] 127.0.0.1 () {34 vars in 506 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-120x120-precomposed.png => generated 1163 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 25/25] 127.0.0.1 () {34 vars in 482 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-120x120.png => generated 1151 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 26/26] 127.0.0.1 () {34 vars in 490 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon-precomposed.png => generated 1155 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 27/27] 127.0.0.1 () {34 vars in 466 bytes} [Wed Apr  5 22:13:16 2023] GET /apple-touch-icon.png => generated 1143 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 28/28] 127.0.0.1 () {34 vars in 448 bytes} [Wed Apr  5 22:13:16 2023] GET /favicon.ico => generated 1134 bytes in 1 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 29/29] 127.0.0.1 () {48 vars in 1241 bytes} [Wed Apr  5 22:13:35 2023] POST /result/ => generated 1085 bytes in 3 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 30/30] 127.0.0.1 () {38 vars in 661 bytes} [Wed Apr  5 22:19:18 2023] GET / => generated 4666 bytes in 11 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 31/31] 127.0.0.1 () {38 vars in 638 bytes} [Wed Apr  5 22:19:18 2023] GET /static/script.js => generated 1139 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 32/32] 127.0.0.1 () {38 vars in 653 bytes} [Wed Apr  5 22:19:18 2023] GET /static/style.css => generated 1139 bytes in 2 msecs (HTTP/1.0 404) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 33/33] 127.0.0.1 () {48 vars in 1241 bytes} [Wed Apr  5 22:19:59 2023] POST /result/ => generated 1085 bytes in 2 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 34/34] 127.0.0.1 () {48 vars in 1241 bytes} [Wed Apr  5 22:20:35 2023] POST /result/ => generated 1085 bytes in 2 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 35/35] 127.0.0.1 () {38 vars in 1047 bytes} [Wed Apr  5 22:26:04 2023] GET / => generated 4666 bytes in 12 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 36/36] 127.0.0.1 () {40 vars in 1078 bytes} [Wed Apr  5 22:32:00 2023] GET / => generated 4666 bytes in 10 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 37/37] 127.0.0.1 () {48 vars in 1241 bytes} [Wed Apr  5 22:32:33 2023] POST /result/ => generated 1085 bytes in 3 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 38/38] 127.0.0.1 () {40 vars in 1078 bytes} [Wed Apr  5 22:36:08 2023] GET / => generated 4666 bytes in 12 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 39/39] 127.0.0.1 () {48 vars in 1240 bytes} [Wed Apr  5 22:36:37 2023] POST /result/ => generated 1085 bytes in 2 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 40/40] 127.0.0.1 () {40 vars in 1078 bytes} [Wed Apr  5 22:36:50 2023] GET / => generated 4666 bytes in 11 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 41/41] 127.0.0.1 () {48 vars in 1240 bytes} [Wed Apr  5 22:36:57 2023] POST /result/ => generated 1085 bytes in 2 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 42/42] 127.0.0.1 () {48 vars in 1241 bytes} [Wed Apr  5 22:37:08 2023] POST /result/ => generated 1085 bytes in 2 msecs (HTTP/1.0 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 62702|app: 0|req: 43/43] 127.0.0.1 () {38 vars in 661 bytes} [Wed Apr  5 22:40:30 2023] GET / => generated 4666 bytes in 10 msecs (HTTP/1.0 200) 8 headers in 358 bytes (1 switches on core 0)
