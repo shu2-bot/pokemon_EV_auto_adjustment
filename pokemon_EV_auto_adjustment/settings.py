@@ -155,5 +155,5 @@ MEDIA_ROOT = '/usr/share/nginx/html/media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-CSRF_TRUSTED_ORIGINS = ['http://www.shu2-lab.com']
+# csrfの検証で403エラーが出るため追加
+CSRF_TRUSTED_ORIGINS = ['https://www.shu2-lab.com']
