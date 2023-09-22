@@ -3,12 +3,12 @@ from django import forms
 
 class Pokemon_status(models.Model):
     pokemon_name = models.CharField("Name", max_length=12)
-    bs_h = models.IntegerField("BaseStat-HP", default=0)
-    bs_a = models.IntegerField("BaseStat-Attack", default=0)
-    bs_b = models.IntegerField("BaseStat-Defense", default=0)
-    bs_c = models.IntegerField("BaseStat-SpecialAttack", default=0)
-    bs_d = models.IntegerField("BaseStat-SpecialDefense", default=0)
-    bs_s = models.IntegerField("BaseStat-Speed", default=0)
+    bs_h = models.IntegerField("BaseStatHitPoint", default=0)
+    bs_a = models.IntegerField("BaseStatAttack", default=0)
+    bs_b = models.IntegerField("BaseStatDefense", default=0)
+    bs_c = models.IntegerField("BaseStatSpecialAttack", default=0)
+    bs_d = models.IntegerField("BaseStatSpecialDefense", default=0)
+    bs_s = models.IntegerField("BaseStatSpeed", default=0)
     type1 = models.CharField("Type1", max_length=8)
     type2 = models.CharField("Type2", max_length=8)
 
@@ -16,7 +16,7 @@ class Pokemon_status(models.Model):
         return self.pokemon_name
     
 class Move_Status(models.Model):
-    move_name = models.CharField("Name", max_length=12)
+    move_name = models.CharField("Name", max_length=20)
     type = models.CharField("Type", max_length=8)
     category = models.CharField("Category", max_length=8)
     power = models.IntegerField("Power", default=0)

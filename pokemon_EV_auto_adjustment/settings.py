@@ -81,14 +81,20 @@ WSGI_APPLICATION = 'pokemon_EV_auto_adjustment.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pokemon_status',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'pokeSV',
+        'PASSWORD': 'pokeSV2023:;',
+        'HOST': 'localhost',
+        'port': '3306',
     },
     'move_status': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'move_status',
+        'USER': 'pokeSV',
+        'PASSWORD': 'pokeSV2023:;',
+        'HOST': 'localhost',
+        'port': '3306',
     }
 }
 
