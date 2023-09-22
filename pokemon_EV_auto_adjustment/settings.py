@@ -82,7 +82,9 @@ WSGI_APPLICATION = 'pokemon_EV_auto_adjustment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'pokemon_status',
+        'USER': 'root',
+        'PASSWORD': '',
     },
     'move_status': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -91,6 +93,13 @@ DATABASES = {
 }
 
 """
+# デフォルトのDB
+'default': {
+ 84         'ENGINE': 'django.db.backends.sqlite3',
+ 85         'NAME': BASE_DIR / 'db.sqlite3',
+ 86     },
+
+
 # アプリケーションごとの接続先DBのマッピング
 DATABASE_APPS_MAPPING = {
     # defaultには管理系のTable
