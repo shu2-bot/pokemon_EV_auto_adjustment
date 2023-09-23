@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'pokemon_EV_auto_adjustment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pokemon_status',
+        'NAME': 'pokemon_adjustment',
         'USER': 'pokeSV',
         'PASSWORD': 'pokeSV2023:;',
         'HOST': 'localhost',
@@ -90,7 +90,7 @@ DATABASES = {
     },
     'move_status': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'move_status',
+        'NAME': 'pokemon_adjustment',
         'USER': 'pokeSV',
         'PASSWORD': 'pokeSV2023:;',
         'HOST': 'localhost',
@@ -172,3 +172,22 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # csrfの検証で403エラーが出るため追加
 CSRF_TRUSTED_ORIGINS = ['https://www.shu2-lab.com']
+
+# DB接続時のログ出力設定を追加
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    },
+}
+

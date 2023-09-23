@@ -19,6 +19,7 @@ from django.urls import include
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # admin/への攻撃への対応
+    path('adminmin/', admin.site.urls),
     path('', include("pokemon_EV_auto_calculation.urls")),
 ]

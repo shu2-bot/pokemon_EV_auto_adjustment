@@ -52,7 +52,9 @@ def result(request):
     if request.method == "POST":
         # [0]調整したいポケモン [1:]相手のポケモン
         pokemon_name_list = request.POST.getlist("pokemon_name")
-        
+        print("pokemon_name_list = ")
+        print(pokemon_name_list)
+
         # 相手のポケモンの努力値
         ev_h_list = request.POST.getlist("ev_h")
         ev_a_list = request.POST.getlist("ev_a")
