@@ -8,6 +8,9 @@
 </div> 
 
 <br>
+<a type="button" class="btn btn-primary btn-lg" href="{% url 'howtouse' %}" target="_blank">ツールの使い方はこちら</a>
+<br>
+<br>
 
 <form class="input_pokemon_form" id="input_pokemon_form" method="post" name="input" target="_blank" action="{% url 'result' %}">
     <div class="my_pokemon" id="my_pokemon">
@@ -27,6 +30,7 @@
             {{opposite_pokemon_form.as_p}}
         </div>
         <div>
+            比較したい条件を選択してくれい
             {% for i in calculation_select_form %}
             <p>{{calculation_select_form_list.pop}} {{i}}</p>
             {% endfor %}

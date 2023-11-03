@@ -16,8 +16,10 @@
     {% endfor %}
 {% endif %}
 
-<a class="btn btn-primary">この出力結果を保存する</a>
+
+<a href = "{% url 'input' %}" target="_blank">調整画面に戻る</a>
 <!--
+<a class="btn btn-primary">この出力結果を保存する</a>
 <a class="btn btn-primary" onclick="tab_close()">タブを閉じる</a>
 -->
 {% endblock %}

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.http import HttpResponseNotAllowed
 from .forms import Calculation_input_form
 from .forms import Calculation_Select_Form 
@@ -46,7 +47,10 @@ def input(request):
     if request.method != "GET":
         response = HttpResponseNotAllowed(["GET"])
         return response
-    
+
+def howtouse(request):
+    # return HttpResponse(b"Hello, workd!")
+    return render(request, "HowToUse.html", {})    
 
 def result(request):
     if request.method == "POST":
